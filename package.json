@@ -1,0 +1,41 @@
+{
+  "name": "oblvn",
+  "displayName": "OBLVN",
+  "description": "Minimalistic, high contrast, dark theme",
+  "version": "0.1.0",
+  "publisher": "mjlaufer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjlaufer/oblvn-vscode"
+  },
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "keywords": [
+    "dark",
+    "dark theme",
+    "high contrast",
+    "oblivion",
+    "oblvn"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "OBLVN",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oblvn-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1"
+  }
+}
