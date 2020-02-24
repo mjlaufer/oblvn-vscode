@@ -6,7 +6,6 @@ module.exports = [
         scope: 'comment, punctuation.definition.comment',
         settings: {
             foreground: theme.green,
-            fontStyle: 'italic',
         },
     },
     {
@@ -72,17 +71,10 @@ module.exports = [
         },
     },
     {
-        name: 'Sub-methods',
-        scope: 'entity.name.module.js, variable.import.parameter.js, variable.other.class.js',
+        name: 'Language methods, Sub-methods',
+        scope:
+            'variable.language, entity.name.module.js, variable.import.parameter.js, variable.other.class.js',
         settings: {
-            foreground: theme.red,
-        },
-    },
-    {
-        name: 'Language methods',
-        scope: 'variable.language',
-        settings: {
-            fontStyle: 'italic',
             foreground: theme.red,
         },
     },
@@ -155,7 +147,6 @@ module.exports = [
         scope:
             'tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js',
         settings: {
-            fontStyle: 'italic',
             foreground: theme.blue,
         },
     },
@@ -163,7 +154,6 @@ module.exports = [
         name: 'ES7 Bind Operator',
         scope: 'source.js constant.other.object.key.js string.unquoted.label.js',
         settings: {
-            fontStyle: 'italic',
             foreground: theme.red,
         },
     },
@@ -189,18 +179,6 @@ module.exports = [
         scope: 'token.debug-token',
         settings: {
             foreground: theme.orange,
-        },
-    },
-    {
-        scope: 'source.js entity.other.attribute-name.js',
-        settings: {
-            fontStyle: 'italic',
-        },
-    },
-    {
-        scope: 'text.html.basic entity.other.attribute-name.html',
-        settings: {
-            fontStyle: 'italic',
         },
     },
 ];
