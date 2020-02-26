@@ -5,6 +5,6 @@ const theme = require('../theme');
 
 module.exports = {
     'extensionButton.prominentForeground': theme.background,
-    'extensionButton.prominentBackground': theme.orangeRed,
-    'extensionButton.prominentHoverBackground': theme.orangeRed,
+    'extensionButton.prominentBackground': theme.orangered,
+    'extensionButton.prominentHoverBackground': theme.orangered,
 };

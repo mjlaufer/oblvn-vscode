@@ -199,6 +199,8 @@
     "notifications.border": "#132021",
     "notificationLink.foreground": "#4DA9BE",
     "extensionButton.prominentForeground": "#0D0D0D",
+    "extensionButton.prominentBackground": "#FE6B49",
+    "extensionButton.prominentHoverBackground": "#FE6B49",
     "pickerGroup.border": "#132021",
     "pickerGroup.foreground": "#668b95",
     "terminal.ansiBlack": "#668b95",
@@ -248,8 +250,8 @@
   },
   "tokenColors": [
     {
-      "name": "Variable, Support",
-      "scope": "variable, support.type, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, ",
+      "name": "Variable, JSON Key",
+      "scope": "variable, source.json meta.structure.dictionary.json support.type.property-name.json",
       "settings": { "foreground": "#ABC7C4" }
     },
     {
@@ -263,13 +265,8 @@
       "settings": { "foreground": "#668b95" }
     },
     {
-      "name": "Regular Expressions, Escape Characters",
-      "scope": "string.regexp, constant.character.escape",
-      "settings": { "foreground": "#668b95" }
-    },
-    {
-      "name": "Punctuation, Misc",
-      "scope": "constant.other.color, punctuation, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution",
+      "name": "Punctuation, Escape Characters, Misc",
+      "scope": " punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, constant.character.escape, keyword.other.template, keyword.other.substitution",
       "settings": { "foreground": "#668b95" }
     },
     {
@@ -278,8 +275,13 @@
       "settings": { "foreground": "#668b95" }
     },
     {
-      "name": "Operator, Function Arrow, String, Class, Inherited Class, Support",
-      "scope": "keyword.operator, storage.type.function.arrow, string, entity.name.class, entity.other.inherited-class, support.class, entity.name.type.class",
+      "name": "String, Support",
+      "scope": "string, support.class, support.type",
+      "settings": { "foreground": "#BDC37F" }
+    },
+    {
+      "name": "Operator, Function Arrow",
+      "scope": "keyword.operator, storage.type.function.arrow",
       "settings": { "foreground": "#BDC37F" }
     },
     {
@@ -288,8 +290,18 @@
       "settings": { "foreground": "#4DA9BE" }
     },
     {
-      "name": "Number, Constant, Function Parameter, Tag, Embedded",
-      "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, entity.name.tag, meta.tag.sgml, keyword.other.unit",
+      "name": "Class, Inherited Class",
+      "scope": "entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type",
+      "settings": { "foreground": "#4DA9BE" }
+    },
+    {
+      "name": "Number, Constant, Function/Type Parameter",
+      "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, meta.type.parameters",
+      "settings": { "foreground": "#FE6B49" }
+    },
+    {
+      "name": "Tag",
+      "scope": "entity.name.tag, meta.tag.sgml, keyword.other.unit",
       "settings": { "foreground": "#FE6B49" }
     },
     {
@@ -302,6 +314,7 @@
       "scope": "variable.language, entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
       "settings": { "foreground": "#FE6B49" }
     },
+    { "name": "Regex", "scope": "string.regexp", "settings": { "foreground": "#FE6B49" } },
     {
       "name": "Comments",
       "scope": "comment, punctuation.definition.comment",

@@ -2,9 +2,9 @@ const theme = require('./theme');
 
 module.exports = [
     {
-        name: 'Variable, Support',
+        name: 'Variable, JSON Key',
         scope:
-            'variable, support.type, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, ',
+            'variable, source.json meta.structure.dictionary.json support.type.property-name.json',
         settings: {
             foreground: theme.foreground,
         },
@@ -25,16 +25,9 @@ module.exports = [
         },
     },
     {
-        name: 'Regular Expressions, Escape Characters',
-        scope: 'string.regexp, constant.character.escape',
-        settings: {
-            foreground: theme.foregroundDark,
-        },
-    },
-    {
-        name: 'Punctuation, Misc',
+        name: 'Punctuation, Escape Characters, Misc',
         scope:
-            'constant.other.color, punctuation, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution',
+            ' punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, constant.character.escape, keyword.other.template, keyword.other.substitution',
         settings: {
             foreground: theme.foregroundDark,
         },
@@ -47,9 +40,15 @@ module.exports = [
         },
     },
     {
-        name: 'Operator, Function Arrow, String, Class, Inherited Class, Support',
-        scope:
-            'keyword.operator, storage.type.function.arrow, string, entity.name.class, entity.other.inherited-class, support.class, entity.name.type.class',
+        name: 'String, Support',
+        scope: 'string, support.class, support.type',
+        settings: {
+            foreground: theme.yellow,
+        },
+    },
+    {
+        name: 'Operator, Function Arrow',
+        scope: 'keyword.operator, storage.type.function.arrow',
         settings: {
             foreground: theme.yellow,
         },
@@ -63,9 +62,24 @@ module.exports = [
         },
     },
     {
-        name: 'Number, Constant, Function Parameter, Tag, Embedded',
+        name: 'Class, Inherited Class',
         scope:
-            'constant.numeric, constant.language, support.constant, constant.character, variable.parameter, entity.name.tag, meta.tag.sgml, keyword.other.unit',
+            'entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type',
+        settings: {
+            foreground: theme.blue,
+        },
+    },
+    {
+        name: 'Number, Constant, Function/Type Parameter',
+        scope:
+            'constant.numeric, constant.language, support.constant, constant.character, variable.parameter, meta.type.parameters',
+        settings: {
+            foreground: theme.orangered,
+        },
+    },
+    {
+        name: 'Tag',
+        scope: 'entity.name.tag, meta.tag.sgml, keyword.other.unit',
         settings: {
             foreground: theme.orangered,
         },
@@ -81,6 +95,13 @@ module.exports = [
         name: 'Language methods, Sub-methods',
         scope:
             'variable.language, entity.name.module.js, variable.import.parameter.js, variable.other.class.js',
+        settings: {
+            foreground: theme.orangered,
+        },
+    },
+    {
+        name: 'Regex',
+        scope: 'string.regexp',
         settings: {
             foreground: theme.orangered,
         },
