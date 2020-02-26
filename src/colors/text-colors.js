@@ -6,9 +6,9 @@ const theme = require('../theme');
 module.exports = {
     'textBlockQuote.background': theme.backgroundLight,
     'textBlockQuote.border': theme.backgroundExtraLight,
-    'textCodeBlock.background': '#f00',
+    'textCodeBlock.background': theme.backgroundExtraLight,
     'textLink.activeForeground': theme.blue,
     'textLink.foreground': theme.blue,
-    'textPreformat.foreground': theme.cyan,
-    'textSeparator.foreground': '#f00',
+    'textPreformat.foreground': theme.foregroundDark,
+    'textSeparator.foreground': theme.foregroundDark,
 };

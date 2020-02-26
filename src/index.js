@@ -46,7 +46,7 @@ fs.writeFile('dist/oblvn-theme.json', JSON.stringify(theme), error => {
           }
         : {
               method: 'log',
-              message: 'Successfuly created theme',
+              message: 'Successfuly created OBLVN theme',
           };
 
     console[log.method](log.message);

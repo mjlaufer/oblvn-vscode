@@ -4,8 +4,8 @@ const theme = require('../theme');
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_scroll-bar-control
 
 module.exports = {
-    'scrollbar.shadow': theme.transparent,
+    'scrollbar.shadow': theme.transparent00,
     'scrollbarSlider.activeBackground': theme.backgroundExtraLight,
-    'scrollbarSlider.background': '#FFFFFF0F',
-    'scrollbarSlider.hoverBackground': '#FFFFFF1F',
+    'scrollbarSlider.background': theme.transparent15,
+    'scrollbarSlider.hoverBackground': theme.transparent31,
 };
