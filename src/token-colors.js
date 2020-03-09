@@ -2,17 +2,23 @@ const theme = require('./theme');
 
 module.exports = [
     {
-        name: 'Variable, JSON Key',
+        name: 'Variable, Object-Literal Key, JSON Key, Built-In Constant',
         scope:
-            'variable, source.json meta.structure.dictionary.json support.type.property-name.json',
+            'variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant',
         settings: {
             foreground: theme.foreground,
         },
     },
     {
-        name: 'entity.name.method.js, meta.method.js',
-        scope:
-            'entity.name.method.js, meta.class-method.js entity.name.function.js, variable.function.constructor',
+        name: 'Type',
+        scope: 'entity.name.type',
+        settings: {
+            foreground: theme.foreground,
+        },
+    },
+    {
+        name: 'JSX Children',
+        scope: 'meta.jsx.children',
         settings: {
             foreground: theme.foreground,
         },
@@ -33,6 +39,13 @@ module.exports = [
         },
     },
     {
+        name: 'Language methods, Sub-methods',
+        scope: 'variable.language',
+        settings: {
+            foreground: theme.foregroundDark,
+        },
+    },
+    {
         name: 'Attributes',
         scope: 'entity.other.attribute-name',
         settings: {
@@ -40,8 +53,15 @@ module.exports = [
         },
     },
     {
+        name: 'Type Parameter',
+        scope: 'meta.type.parameters',
+        settings: {
+            foreground: theme.foregroundDark,
+        },
+    },
+    {
         name: 'String, Support',
-        scope: 'string, support.class, support.type',
+        scope: 'string, support.type',
         settings: {
             foreground: theme.yellow,
         },
@@ -49,6 +69,13 @@ module.exports = [
     {
         name: 'Operator, Function Arrow',
         scope: 'keyword.operator, storage.type.function.arrow',
+        settings: {
+            foreground: theme.yellow,
+        },
+    },
+    {
+        name: 'Component Tag',
+        scope: 'support.class.component',
         settings: {
             foreground: theme.yellow,
         },
@@ -62,17 +89,16 @@ module.exports = [
         },
     },
     {
-        name: 'Class, Inherited Class',
+        name: 'Class, Inherited Class, Built-In Class',
         scope:
-            'entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type',
+            'entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin, ',
         settings: {
             foreground: theme.blue,
         },
     },
     {
-        name: 'Number, Constant, Function/Type Parameter',
-        scope:
-            'constant.numeric, constant.language, support.constant, constant.character, variable.parameter, meta.type.parameters',
+        name: 'Number, Constant, Function Parameter',
+        scope: 'constant.numeric, constant.language, constant.character, variable.parameter',
         settings: {
             foreground: theme.orangered,
         },
@@ -87,14 +113,6 @@ module.exports = [
     {
         name: 'Other Variable, String Link',
         scope: 'support.other.variable, string.other.link',
-        settings: {
-            foreground: theme.orangered,
-        },
-    },
-    {
-        name: 'Language methods, Sub-methods',
-        scope:
-            'variable.language, entity.name.module.js, variable.import.parameter.js, variable.other.class.js',
         settings: {
             foreground: theme.orangered,
         },
@@ -115,8 +133,7 @@ module.exports = [
     },
     {
         name: 'Symbols',
-        scope:
-            'constant.other.symbol, constant.other.key, markup.heading, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js',
+        scope: 'constant.other.symbol, constant.other.key, markup.heading',
         settings: {
             foreground: theme.green,
         },
@@ -168,21 +185,6 @@ module.exports = [
         scope: 'entity.name.filename.find-in-files',
         settings: {
             foreground: theme.green,
-        },
-    },
-    {
-        name: 'Decorators',
-        scope:
-            'tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js',
-        settings: {
-            foreground: theme.blue,
-        },
-    },
-    {
-        name: 'ES7 Bind Operator',
-        scope: 'source.js constant.other.object.key.js string.unquoted.label.js',
-        settings: {
-            foreground: theme.yellow,
         },
     },
     {

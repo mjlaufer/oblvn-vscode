@@ -250,13 +250,14 @@
   },
   "tokenColors": [
     {
-      "name": "Variable, JSON Key",
-      "scope": "variable, source.json meta.structure.dictionary.json support.type.property-name.json",
+      "name": "Variable, Object-Literal Key, JSON Key, Built-In Constant",
+      "scope": "variable, meta.object-literal.key, source.json meta.structure.dictionary.json support.type.property-name.json, support.constant",
       "settings": { "foreground": "#ABC7C4" }
     },
+    { "name": "Type", "scope": "entity.name.type", "settings": { "foreground": "#ABC7C4" } },
     {
-      "name": "entity.name.method.js, meta.method.js",
-      "scope": "entity.name.method.js, meta.class-method.js entity.name.function.js, variable.function.constructor",
+      "name": "JSX Children",
+      "scope": "meta.jsx.children",
       "settings": { "foreground": "#ABC7C4" }
     },
     {
@@ -270,13 +271,23 @@
       "settings": { "foreground": "#668b95" }
     },
     {
+      "name": "Language methods, Sub-methods",
+      "scope": "variable.language",
+      "settings": { "foreground": "#668b95" }
+    },
+    {
       "name": "Attributes",
       "scope": "entity.other.attribute-name",
       "settings": { "foreground": "#668b95" }
     },
     {
+      "name": "Type Parameter",
+      "scope": "meta.type.parameters",
+      "settings": { "foreground": "#668b95" }
+    },
+    {
       "name": "String, Support",
-      "scope": "string, support.class, support.type",
+      "scope": "string, support.type",
       "settings": { "foreground": "#BDC37F" }
     },
     {
@@ -285,18 +296,23 @@
       "settings": { "foreground": "#BDC37F" }
     },
     {
+      "name": "Component Tag",
+      "scope": "support.class.component",
+      "settings": { "foreground": "#BDC37F" }
+    },
+    {
       "name": "Function, Special Method, Block Level",
       "scope": "entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level",
       "settings": { "foreground": "#4DA9BE" }
     },
     {
-      "name": "Class, Inherited Class",
-      "scope": "entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type",
+      "name": "Class, Inherited Class, Built-In Class",
+      "scope": "entity.name.class, entity.name.type.class, entity.other.inherited-class, new.expr entity.name.type, support.class.builtin, ",
       "settings": { "foreground": "#4DA9BE" }
     },
     {
-      "name": "Number, Constant, Function/Type Parameter",
-      "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, meta.type.parameters",
+      "name": "Number, Constant, Function Parameter",
+      "scope": "constant.numeric, constant.language, constant.character, variable.parameter",
       "settings": { "foreground": "#FE6B49" }
     },
     {
@@ -309,11 +325,6 @@
       "scope": "support.other.variable, string.other.link",
       "settings": { "foreground": "#FE6B49" }
     },
-    {
-      "name": "Language methods, Sub-methods",
-      "scope": "variable.language, entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
-      "settings": { "foreground": "#FE6B49" }
-    },
     { "name": "Regex", "scope": "string.regexp", "settings": { "foreground": "#FE6B49" } },
     {
       "name": "Comments",
@@ -322,7 +333,7 @@
     },
     {
       "name": "Symbols",
-      "scope": "constant.other.symbol, constant.other.key, markup.heading, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+      "scope": "constant.other.symbol, constant.other.key, markup.heading",
       "settings": { "foreground": "#09BB07" }
     },
     {
@@ -355,16 +366,6 @@
       "name": "Search Results Lines",
       "scope": "entity.name.filename.find-in-files",
       "settings": { "foreground": "#09BB07" }
-    },
-    {
-      "name": "Decorators",
-      "scope": "tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js",
-      "settings": { "foreground": "#4DA9BE" }
-    },
-    {
-      "name": "ES7 Bind Operator",
-      "scope": "source.js constant.other.object.key.js string.unquoted.label.js",
-      "settings": { "foreground": "#BDC37F" }
     },
     { "scope": "token.info-token", "settings": { "foreground": "#4DA9BE" } },
     { "scope": "token.warn-token", "settings": { "foreground": "#BDC37F" } },
