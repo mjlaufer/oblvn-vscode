@@ -7,8 +7,8 @@ module.exports = {
     'activityBar.background': theme.background,
     'activityBar.dropBackground': theme.backgroundLight,
     'activityBar.foreground': theme.foreground,
-    'activityBar.inactiveForeground': theme.foregroundDark,
+    'activityBar.inactiveForeground': theme.cyan,
     'activityBar.border': theme.backgroundExtraLight,
-    'activityBarBadge.background': theme.orangered,
+    'activityBarBadge.background': theme.orange,
     'activityBarBadge.foreground': theme.background,
 };

@@ -5,10 +5,10 @@ const theme = require('../theme');
 
 module.exports = {
     'statusBar.background': theme.background,
-    'statusBar.foreground': theme.foregroundDark,
+    'statusBar.foreground': theme.cyan,
     'statusBar.debuggingBackground': theme.background,
     'statusBar.debuggingForeground': theme.foreground,
-    'statusBar.noFolderForeground': theme.foregroundDark,
+    'statusBar.noFolderForeground': theme.cyan,
     'statusBar.noFolderBackground': theme.background,
     'statusBarItem.activeBackground': theme.background,
     'statusBarItem.hoverBackground': theme.background,

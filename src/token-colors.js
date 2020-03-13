@@ -27,7 +27,7 @@ module.exports = [
         name: 'Keyword, Storage',
         scope: 'keyword, storage.type, storage.modifier',
         settings: {
-            foreground: theme.foregroundDark,
+            foreground: theme.cyan,
         },
     },
     {
@@ -35,28 +35,28 @@ module.exports = [
         scope:
             ' punctuation, punctuation.definition.tag, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, constant.other.color, constant.character.escape, keyword.other.template, keyword.other.substitution',
         settings: {
-            foreground: theme.foregroundDark,
+            foreground: theme.cyan,
         },
     },
     {
         name: 'Language methods, Sub-methods',
         scope: 'variable.language',
         settings: {
-            foreground: theme.foregroundDark,
+            foreground: theme.cyan,
         },
     },
     {
         name: 'Attributes',
         scope: 'entity.other.attribute-name',
         settings: {
-            foreground: theme.foregroundDark,
+            foreground: theme.cyan,
         },
     },
     {
         name: 'Type Parameter',
         scope: 'meta.type.parameters',
         settings: {
-            foreground: theme.foregroundDark,
+            foreground: theme.cyan,
         },
     },
     {
@@ -97,31 +97,31 @@ module.exports = [
         },
     },
     {
-        name: 'Number, Constant, Function Parameter',
-        scope: 'constant.numeric, constant.language, constant.character, variable.parameter',
+        name: 'Number, Constant',
+        scope: 'constant.numeric, constant.language, constant.character',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {
         name: 'Tag',
         scope: 'entity.name.tag, meta.tag.sgml, keyword.other.unit',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {
         name: 'Other Variable, String Link',
         scope: 'support.other.variable, string.other.link',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {
         name: 'Regex',
         scope: 'string.regexp',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {
@@ -177,7 +177,7 @@ module.exports = [
         name: 'Search Results Nums',
         scope: 'constant.numeric.line-number.find-in-files - match',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {
@@ -202,7 +202,7 @@ module.exports = [
     {
         scope: 'token.error-token',
         settings: {
-            foreground: theme.orangered,
+            foreground: theme.orange,
         },
     },
     {

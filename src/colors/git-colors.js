@@ -7,6 +7,6 @@ module.exports = {
     'gitDecoration.modifiedResourceForeground': theme.blue,
     'gitDecoration.deletedResourceForeground': theme.red,
     'gitDecoration.untrackedResourceForeground': theme.green,
-    'gitDecoration.ignoredResourceForeground': theme.foregroundDark,
+    'gitDecoration.ignoredResourceForeground': theme.cyan,
     'gitDecoration.conflictingResourceForeground': theme.red,
 };

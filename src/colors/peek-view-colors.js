@@ -15,6 +15,6 @@ module.exports = {
     'peekViewResult.selectionBackground': theme.backgroundExtraLight,
     'peekViewResult.selectionForeground': theme.foreground,
     'peekViewTitle.background': theme.backgroundLight,
-    'peekViewTitleDescription.foreground': theme.foregroundDark,
+    'peekViewTitleDescription.foreground': theme.cyan,
     'peekViewTitleLabel.foreground': theme.foreground,
 };

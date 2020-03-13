@@ -8,6 +8,6 @@ module.exports = {
     foreground: theme.foreground,
     'widget.shadow': theme.transparent,
     'selection.background': theme.blue,
-    descriptionForeground: theme.foregroundDark,
+    descriptionForeground: theme.cyan,
     errorForeground: theme.red,
 };

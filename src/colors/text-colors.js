@@ -9,6 +9,6 @@ module.exports = {
     'textCodeBlock.background': theme.backgroundExtraLight,
     'textLink.activeForeground': theme.blue,
     'textLink.foreground': theme.blue,
-    'textPreformat.foreground': theme.foregroundDark,
-    'textSeparator.foreground': theme.foregroundDark,
+    'textPreformat.foreground': theme.cyan,
+    'textSeparator.foreground': theme.cyan,
 };
